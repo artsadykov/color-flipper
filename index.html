@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <link rel="shortcut icon" href="./images/fill.svg">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <h1>color flipper</h1>
+        <ul class="nav-links">
+          <li>
+            <a href="">
+              <img src="./images/github-mark-white.svg" alt="github" width="30" height="30">
+            </a>
+          </li>
+          <li>
+            <button class="modal-btn"><img src="./images/faq.svg" alt="faq" width="30" height="30"></button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="buttons">
+        <div class="container">
+          <button class="button color-btn">simple color</button>
+        </div>
+        <div class="container">
+          <button class="buttonHex color-btn">hex color</button>
+        </div>
+      </div>
+      <p><span class="color"></span></p>
+      <div class="modal-overlay">
+        <div class="modal-container">
+          <p>
+            After clicking one of the two buttons, the background color of the
+            document will be changed. There are two options: pressing the
+            <b>SIMPLE COLOR</b> button will select one of the given colors of
+            the rainbow, and pressing the <b>HEX COLOR</b> button will randomly
+            type the hexadecimal color code. All colors will also be written to
+            the console.
+          </p>
+          <button class="close-btn">OK</button>
+        </div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+    <script src="./modal.js"></script>
+  </body>
+</html>
